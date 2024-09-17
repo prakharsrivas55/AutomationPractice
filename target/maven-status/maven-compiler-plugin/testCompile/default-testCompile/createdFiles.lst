@@ -1,0 +1,5 @@
+steps\RegisterUserSteps.class
+pages\BasePage.class
+steps\BaseSteps.class
+steps\Hook.class
+Runner\Runner.class
