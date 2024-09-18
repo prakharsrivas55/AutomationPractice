@@ -12,7 +12,7 @@ public class BasePage {
         // this.log= log2;
         PageFactory.initElements(rdriver, this);
 
-    }
+    }   
     // WebDriverManager.chromedriver().setup();
     // WebDriver driver= new ChromeDriver();
     

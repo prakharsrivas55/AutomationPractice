@@ -1,5 +1,6 @@
-steps\RegisterUserSteps.class
 pages\BasePage.class
+steps\RegisterUserSteps.class
 steps\BaseSteps.class
 steps\Hook.class
 Runner\Runner.class
+pages\RegisterUser.class
