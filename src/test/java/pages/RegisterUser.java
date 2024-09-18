@@ -64,4 +64,13 @@ private WebElement singup_btn;
         
         singup_btn.click();
     }
+
+@FindBy(xpath = "(//h2[@class='title text-center']/b)[1]")
+private WebElement enteremailtext_loc;
+
+    public void verify_enteremailtext(){
+        
+        String text= enteremailtext_loc.getText();
+        assertEquals("ENTER ACCOUNT INFORMATION", text);
+    }
 }

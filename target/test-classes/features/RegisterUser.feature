@@ -7,6 +7,7 @@ Scenario: Opening the browser
     * Click on Signup, Login button
     * Verify New User Signup! is visible
     * Enter name and email address
+    * Verify that ENTER ACCOUNT INFORMATION is visible
 
 
 

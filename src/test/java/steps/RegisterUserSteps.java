@@ -46,5 +46,11 @@ public class RegisterUserSteps extends BaseSteps {
         login.singupbtn();
     }
 
+    @Given("Verify that ENTER ACCOUNT INFORMATION is visible")
+    public void Verify_that_ENTER_ACCOUNT_INFORMATION_is_visible() {
+        
+        login.verify_enteremailtext();
+    }
+
 }
 
