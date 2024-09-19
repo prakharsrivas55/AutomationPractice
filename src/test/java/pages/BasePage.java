@@ -4,7 +4,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.WebDriver;
 public class BasePage {
 
-    WebDriver driver;
+    protected WebDriver driver;
     // protected Logger log;
 
     public BasePage(WebDriver rdriver){

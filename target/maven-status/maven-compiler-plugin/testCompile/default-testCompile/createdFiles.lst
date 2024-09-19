@@ -1,6 +1,6 @@
-pages\BasePage.class
+Helpers\Predefined.class
+Helpers\dropdowns.class
 steps\RegisterUserSteps.class
 steps\BaseSteps.class
 steps\Hook.class
-Runner\Runner.class
 pages\RegisterUser.class
