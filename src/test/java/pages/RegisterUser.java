@@ -13,6 +13,8 @@ import java.io.IOException;
 
 public class RegisterUser extends BasePage {
 
+    private static String email;
+
     dropdowns drp= new dropdowns();
     Predefined pre= new Predefined(driver);
 
@@ -59,9 +61,14 @@ private WebElement singnup_email_loc;
             stringBuilder.append(randomChar);
         }
     
-        String email = stringBuilder.toString();
-        singnup_email_loc.sendKeys(email+"@yopmail.com");
+        RegisterUser.email = stringBuilder.toString();
+        pre.sendkeyselement(singnup_email_loc, email+"@yopmail.com");
     }  
+
+// Getter for email
+    public String getEmail() {
+        return RegisterUser.email;
+    }
     
 @FindBy(xpath = "//button[@data-qa='signup-button']")
 private WebElement singup_btn;
@@ -82,21 +89,21 @@ private WebElement enteremailtext_loc;
 
 @FindBy(xpath = "//input[@id='id_gender1']")
 private WebElement salutation_loc;
-@FindBy(xpath = "//input[@id='password']")
-private WebElement password_loc;
 @FindBy(xpath = "//select[@id='days']")
 private WebElement selectday_loc;
 @FindBy(xpath = "//select[@id='months']")
 private WebElement selectmonth_loc;
 @FindBy(xpath = "//select[@id='years']")
 private WebElement selectyear_loc;
+@FindBy(xpath = "//input[@id='password']")
+private WebElement password_loc;
 
     public void enterinformation(){
         
-        salutation_loc.click();
-        password_loc.sendKeys("Password@123");
+        pre.clickelement(salutation_loc);
+        pre.sendkeyselement(password_loc, "Password@123");
         drp.selectOptionFromDropdown(selectday_loc,"20");
-        drp.selectOptionFromDropdown(selectmonth_loc, "9");
+        drp.selectOptionFromDropdown(selectmonth_loc, "8");
         drp.selectOptionFromDropdown(selectyear_loc, "2000"); 
         
         pre.scrolldown();
