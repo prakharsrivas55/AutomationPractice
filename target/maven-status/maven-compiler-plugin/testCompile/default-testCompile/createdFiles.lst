@@ -1,10 +1,10 @@
 pages\BasePage.class
 Helpers\Predefined.class
-Helpers\dropdowns.class
 pages\LoginPage.class
 steps\RegisterUserSteps.class
 steps\BaseSteps.class
+steps\LoginPageSteps.class
+Helpers\dropdowns.class
 steps\Hook.class
 Runner\Runner.class
 pages\RegisterUser.class
-steps\LoginPageSteps.class

@@ -62,6 +62,10 @@ private WebElement singnup_email_loc;
         }
     
         RegisterUser.email = stringBuilder.toString();
+    }
+
+    public void EnterEmailAddress(){
+
         pre.sendkeyselement(singnup_email_loc, email+"@yopmail.com");
     }  
 
