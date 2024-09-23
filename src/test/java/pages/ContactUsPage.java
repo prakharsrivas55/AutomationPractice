@@ -47,7 +47,7 @@ private WebElement contact_form_message_loc;
     public void FillContactUsForm() throws InterruptedException, IOException{
 
         pre.sendkeyselement(contact_form_name_loc, "Iron Man");
-        register.enter_email_address();
+        register.GenerateEmail();
         String emailID= register.getEmail();
         pre.sendkeyselement(contact_form_email_loc, emailID+"@yopmail.com");
         pre.sendkeyselement(contact_form_subject_loc, "This a test Subject");
@@ -120,9 +120,6 @@ private WebElement advertisement_loc;
 
         if(advertisement_loc.isDisplayed()){
             pre.scrolldown();
-        }
-        else{
-            System.out.println("Executing remaining tasks...");
         }
     }
 

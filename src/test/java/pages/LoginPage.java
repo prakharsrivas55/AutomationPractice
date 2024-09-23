@@ -42,7 +42,7 @@ private WebElement login_email_loc;
 
     public void loginemail_address() throws InterruptedException, IOException{
         
-        // register.enter_email_address();
+        // register.GenerateEmail();
         String emailID= register.getEmail();
         pre.sendkeyselement(login_email_loc, emailID+"@yopmail.com");
     }

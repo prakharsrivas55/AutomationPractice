@@ -50,7 +50,7 @@ private WebElement singnup_name_loc;
 @FindBy(xpath = "//input[@data-qa='signup-email']")
 private WebElement singnup_email_loc;
 
-    public void enter_email_address() throws InterruptedException, IOException{
+    public void GenerateEmail() throws InterruptedException, IOException{
     
         Random random = new Random();
         String characters = "abcdefghijklmnopqrstuvwxyz";

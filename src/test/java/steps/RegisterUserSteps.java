@@ -45,7 +45,8 @@ public class RegisterUserSteps extends BaseSteps {
     public void Enter_name_and_email_address() throws InterruptedException, IOException {
 
         register.enter_name();
-        register.enter_email_address();
+        register.GenerateEmail();
+        register.EnterEmailAddress();
     }
     
 
