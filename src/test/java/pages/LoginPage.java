@@ -46,6 +46,7 @@ private WebElement login_email_loc;
         String emailID= register.getEmail();
         pre.sendkeyselement(login_email_loc, emailID+"@yopmail.com");
     }
+    
 
 @FindBy(xpath = "//input[@data-qa='login-password']")
 private WebElement loginpassword_loc;
@@ -54,6 +55,15 @@ private WebElement loginpassword_loc;
         
         pre.sendkeyselement(loginpassword_loc, "Password@123");
     }
+
+@FindBy(xpath = "//div[@class='login-form']/form/p")
+private WebElement login_validation_popup_loc;
+
+    public void LoginVaidationMessgae(){
+        
+        String text= login_validation_popup_loc.getText();
+        assertEquals("Your email or password is incorrect!", text);
+    }
  
 @FindBy(xpath = "//button[@data-qa='login-button']")
 private WebElement loginbtn_loc;
@@ -61,6 +71,6 @@ private WebElement loginbtn_loc;
     public void clickOnLoginBtn(){
         
         pre.clickelement(loginbtn_loc);
-    }    
+    }
     
 }

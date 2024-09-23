@@ -36,5 +36,18 @@ public class LoginPageSteps extends BaseSteps {
         
         login.clickOnLoginBtn();
     }
+
+    @Given("Enter incorrect email address and password")
+    public void Enter_incorrect_email_address_and_password() throws InterruptedException, IOException {
+        
+        login.loginemail_address();
+        login.loginpassword();
+    }
+
+    @Given("Verify error {string} is visible")
+    public void Verify_error_is_visible(String s) {
+        
+        login.LoginVaidationMessgae();
+    }
     
 }

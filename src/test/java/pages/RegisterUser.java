@@ -216,4 +216,25 @@ private WebElement accountdeleted_loc;
         String text= accountdeleted_loc.getText();
         assertEquals("ACCOUNT DELETED!", text);
     }
+
+public void enter_existing_email() throws InterruptedException, IOException{
+        
+        String emailID= getEmail();
+        pre.sendkeyselement(singnup_email_loc, emailID+"@yopmail.com");
+    }
+
+public void enter_existing_name() throws InterruptedException, IOException{
+        
+        enter_name();
+    }
+
+@FindBy(xpath = "//div[@class='signup-form']/form/p")
+private WebElement signup_validation_popup_loc;
+
+    public void ExistingSignupMessgae(){
+        
+        String text= signup_validation_popup_loc.getText();
+        assertEquals("Email Address already exist!", text);
+    }
+
 }

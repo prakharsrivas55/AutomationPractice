@@ -3,6 +3,8 @@ package steps;
 import java.io.IOException;
 
 import org.openqa.selenium.JavascriptExecutor;
+
+import pages.LoginPage;
 import pages.RegisterUser;
 import io.cucumber.java.en.Given;
 
@@ -10,6 +12,7 @@ import io.cucumber.java.en.Given;
 public class RegisterUserSteps extends BaseSteps {
 
     RegisterUser register= new RegisterUser(driver);
+    LoginPage login= new LoginPage(driver);
 
     @Given("Navigate to url automationexercise.com")
     public void open_homepage() {
@@ -43,8 +46,8 @@ public class RegisterUserSteps extends BaseSteps {
 
         register.enter_name();
         register.enter_email_address();
-        register.singupbtn();
     }
+    
 
     @Given("Verify that ENTER ACCOUNT INFORMATION is visible")
     public void Verify_that_ENTER_ACCOUNT_INFORMATION_is_visible() {
@@ -112,6 +115,25 @@ public class RegisterUserSteps extends BaseSteps {
         
         register.VerifyAccountDeleted();
         register.clickOnContinueBtn();
+    }
+
+    @Given("Enter name and already registered email address")
+    public void Enter_name_and_already_registered_email_address() throws InterruptedException, IOException {
+        
+        register.enter_existing_name();
+        register.enter_existing_email();
+    }
+
+    @Given("Click on Signup button")
+    public void Click_on_Signup_button() {
+
+        register.singupbtn();
+    }
+
+    @Given("Verify error Email Address already exist! is visible")
+    public void Verify_error_Email_Address_already_exist_is_visible() {
+        
+        register.ExistingSignupMessgae();
     }
     
 }
