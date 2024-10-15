@@ -121,4 +121,12 @@ private WebElement successfullySubscribeMessage_loc;
         pre.assertions("You have been successfully subscribed!", Actualmessage);
     }
 
+@FindBy(xpath = "//i[@class='fa fa-shopping-cart']")
+private WebElement cartbtn_loc;
+
+    public void ClickOnCartButton(){
+        
+        pre.clickelement(cartbtn_loc);
+    }
+
 }

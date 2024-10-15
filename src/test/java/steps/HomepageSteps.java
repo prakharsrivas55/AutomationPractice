@@ -57,4 +57,10 @@ public class HomepageSteps extends BaseSteps {
         
         home.verifySubscriptionMessage();
     }
+
+    @Given("Click on Cart button")
+    public void Click_on_Cart_button() {
+        
+        home.ClickOnCartButton();
+    }
 }
