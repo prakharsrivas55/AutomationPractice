@@ -119,7 +119,6 @@ private WebElement productavailability_loc;
        String ExpectedProductAvailability = "Availability: In Stock";
        String ActualProductAvailability= productavailability_loc.getText();
        pre.assertions(ExpectedProductAvailability, ActualProductAvailability);
-    
     }   
 
 @FindBy(xpath = "//div[@class='product-information']/p[3][contains(., 'New')]")//////////////////
@@ -130,17 +129,56 @@ private WebElement productcondition_loc;
        String ExpectedProductCondition = "Condition: New";
        String ActualProductCondition= productcondition_loc.getText();
        pre.assertions(ExpectedProductCondition, ActualProductCondition);
+    } 
+
+@FindBy(xpath = "//div[@class='product-information']/p[4][contains(., 'Polo')]")
+private WebElement productbrand_loc;
+    
+    public void ProductBrandCheck(){
+            
+        String ExpectedProductBrand = "Brand: Polo";
+        String ActualProductBrand= productbrand_loc.getText();
+        pre.assertions(ExpectedProductBrand, ActualProductBrand);  
+    }
+
+@FindBy(xpath = "//input[@id='search_product']")
+private WebElement searchbox_loc;
+@FindBy(xpath = "//button[@id='submit_search']")
+private WebElement searchbutton_loc;
+    
+    public void searchproduct(){
+
+        pre.sendkeyselement(searchbox_loc, "Jeans");
+        pre.clickelement(searchbutton_loc);
     
     } 
 
-    @FindBy(xpath = "//div[@class='product-information']/p[4][contains(., 'Polo')]")
-    private WebElement productbrand_loc;
-    
-        public void ProductBrandCheck(){
-            
-           String ExpectedProductBrand = "Brand: Polo";
-           String ActualProductBrand= productbrand_loc.getText();
-           pre.assertions(ExpectedProductBrand, ActualProductBrand);
+@FindBy(xpath = "//h2[@class='title text-center' and contains(text(),'Searched Products')]")
+private WebElement SearchProductText_loc;
+
+    public void VerifySearchedProductsMessage(){
         
+        String text= SearchProductText_loc.getText();
+        assertEquals("SEARCHED PRODUCTS", text);
+    }
+
+@FindBy(xpath = "//div[@class='single-products']/div/p")
+private List<WebElement> verifyRelatedProductList_loc;
+
+    public void verify_related_products_list(){
+
+        int productcount=0;
+
+        for (WebElement product : verifyRelatedProductList_loc) {
+            if (product.getText().toLowerCase().contains("jeans")) {
+                productcount++;
+            }
         }
+        if(productcount>0){
+            System.out.println("Product related to search Product are visible and count is: "+ productcount);
+        }
+        else{
+            System.out.println("Product related to searched product are not visible.");
+        } 
+    }
 }

@@ -42,4 +42,25 @@ public class ProductPageSteps extends BaseSteps {
         productpage.ProductBrandCheck();
 
     }
+
+    @Given("Enter product name in search input and click search button")
+    public void Enter_product_name_in_search_input_and_click_search_button() {
+
+        productpage.searchproduct();
+
+    }
+
+    @Given("Verify SEARCHED PRODUCTS is visible")
+    public void Verify_SEARCHED_PRODUCTS_is_visible() {
+        
+        productpage.verify_related_products_list();
+        
+    }
+
+    @Given("Verify all the products related to search are visible")
+    public void Verify_all_the_products_related_to_search_are_visible() {
+        
+        productpage.VerifySearchedProductsMessage();
+    }
+    
 }
