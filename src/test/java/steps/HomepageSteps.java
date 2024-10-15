@@ -34,4 +34,27 @@ public class HomepageSteps extends BaseSteps {
         
     }
 
+    @Given("Scroll down to footer")
+    public void Scroll_down_to_footer() {
+
+        home.scrollToFooter();
+    }
+
+    @Given("Verify text {string}")
+    public void Verify_text(String s) {
+        
+        home.verifySubscriptionText();
+    }
+
+    @Given("Enter email address in input and click arrow button")
+    public void Enter_email_address_in_input_and_click_arrow_button() {
+        
+        home.enterSubscriptionEmail();
+    }
+
+    @Given("Verify success message You have been successfully subscribed! is visible")
+    public void Verify_success_message_You_have_been_successfully_subscribed_is_visible() {
+        
+        home.verifySubscriptionMessage();
+    }
 }

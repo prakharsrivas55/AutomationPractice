@@ -55,6 +55,11 @@ public class Predefined extends BasePage {
         js.executeScript("window.scrollBy(0,350)", "");
     }
 
+    public void scrollToFooter(WebElement footerElement) {
+        // Use JavaScript to scroll to the footer element
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", footerElement);
+    }
+
     public void assertions(String ExpectedText,String ActualText){
         
         assertEquals(ExpectedText, ActualText);

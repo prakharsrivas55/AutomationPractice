@@ -84,4 +84,41 @@ private WebElement firstproductcategory_loc;
         return HomePage.FirstProductCategory;
     }
 
+@FindBy(xpath = "//footer[@id='footer']")
+private WebElement footer_loc;
+
+    public void scrollToFooter(){
+
+        pre.scrollToFooter(footer_loc);
+    }
+
+@FindBy(xpath = "//div[@class='single-widget']/h2")
+private WebElement verifySubscriptionText_loc;
+
+    public void verifySubscriptionText(){
+        
+        String Actualmessage= verifySubscriptionText_loc.getText();
+        pre.assertions("SUBSCRIPTION", Actualmessage);
+    }
+
+@FindBy(xpath = "//input[@id='susbscribe_email']")
+private WebElement subsciptionEmail_loc;
+@FindBy(xpath = "//button[@id='subscribe']")
+private WebElement subsciptionClick_loc;
+
+    public void enterSubscriptionEmail(){
+        
+        pre.sendkeyselement(subsciptionEmail_loc, "test1@yopmail.com");
+        pre.clickelement(subsciptionClick_loc);
+    }
+
+@FindBy(xpath = "//div[@class='alert-success alert']")
+private WebElement successfullySubscribeMessage_loc;
+
+    public void verifySubscriptionMessage(){
+        
+        String Actualmessage= successfullySubscribeMessage_loc.getText();
+        pre.assertions("You have been successfully subscribed!", Actualmessage);
+    }
+
 }
