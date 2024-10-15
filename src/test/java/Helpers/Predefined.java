@@ -3,12 +3,16 @@ package Helpers;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+
+import static org.junit.Assert.assertEquals;
+
 import java.awt.AWTException;
 import Helpers.Predefined;
 
@@ -49,6 +53,11 @@ public class Predefined extends BasePage {
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,350)", "");
+    }
+
+    public void assertions(String ExpectedText,String ActualText){
+        
+        assertEquals(ExpectedText, ActualText);
     }
 
     public void uploadfile() throws AWTException{

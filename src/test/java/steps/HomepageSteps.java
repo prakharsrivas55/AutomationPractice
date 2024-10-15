@@ -19,4 +19,19 @@ public class HomepageSteps extends BaseSteps {
         home.TestCaseTitleCheck();
     }
 
+    @Given("Click on Products button")
+    public void Click_on_Products_button() {
+        
+        home.ClickOnProductstButton();
+    }
+
+    @Given("Get details of the products")
+    public void Get_Details_Of_The_Products() {
+        
+        home.productname();
+        home.productprice();
+        home.productcatageory();
+        
+    }
+
 }
