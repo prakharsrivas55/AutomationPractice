@@ -1,7 +1,7 @@
 Feature: Start
 
 @Testcase9
-Scenario: Verify All Products and product detail page
+Scenario: Search any product from search bar
  
     * Navigate to url automationexercise.com
     * Verify that home page is visible successfully

@@ -62,5 +62,29 @@ public class ProductPageSteps extends BaseSteps {
         
         productpage.VerifySearchedProductsMessage();
     }
+
+    @Given("Hover over first product and click on Add to cart")
+    public void Hover_over_first_product_and_click_on_Add_to_cart() {
+
+        productpage.AddFirstProductToCart();
+    }
+
+    @Given("Click on Continue Shopping button")
+    public void Click_on_Continue_Shopping_button() {
+
+        productpage.ClickOnContinueShoppingBtn();
+    }
+
+    @Given("Hover over second product and click on Add to cart")
+    public void Hover_over_second_product_and_click_on_Add_to_cart() {
+        
+        productpage.AddSecondProductToCart();
+    }
+
+    @Given("Click on View Cart button")
+    public void Click_on_View_Cart_button() {
+
+        productpage.ClickOnViewCartBtn();
+    }
     
 }

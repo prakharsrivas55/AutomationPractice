@@ -1,7 +1,7 @@
 Feature: Start
 
 @Testcase10
-Scenario: Verify All Products and product detail page
+Scenario: Verify Subscription in home page
  
     * Navigate to url automationexercise.com
     * Verify that home page is visible successfully

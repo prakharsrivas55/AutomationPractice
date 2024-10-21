@@ -181,4 +181,46 @@ private List<WebElement> verifyRelatedProductList_loc;
             System.out.println("Product related to searched product are not visible.");
         } 
     }
+
+@FindBy(xpath = "(//div[@class='single-products']/div[@class='productinfo text-center'])[1]")
+private WebElement HoverFirstProduct_loc;
+@FindBy(xpath = "//div[@class='product-overlay']//a[@data-product-id='1']")
+private WebElement AddToCart1_btn;
+
+    public void AddFirstProductToCart(){   
+
+        pre.scrolldown();
+        pre.actionclass(HoverFirstProduct_loc);
+        pre.explictwaitcondition(AddToCart1_btn, driver);
+        pre.clickelement(AddToCart1_btn);
+    }
+
+@FindBy(xpath = "//button[@class='btn btn-success close-modal btn-block']")
+private WebElement ContinueShopping_loc;
+
+    public void ClickOnContinueShoppingBtn(){   
+
+        pre.clickelement(ContinueShopping_loc);
+    }
+
+@FindBy(xpath = "(//div[@class='single-products']/div[@class='productinfo text-center'])[2]")
+private WebElement HoverSecondProduct_loc;
+@FindBy(xpath = "//div[@class='product-overlay']//a[@data-product-id='2']")
+private WebElement AddToCart2_btn;
+
+    public void AddSecondProductToCart(){   
+
+        pre.scrolldown();
+        pre.actionclass(HoverSecondProduct_loc);
+        pre.explictwaitcondition(AddToCart2_btn, driver);
+        pre.clickelement(AddToCart2_btn);
+    }
+
+@FindBy(xpath = "//p[@class='text-center']/a")
+private WebElement ViewCart_btn;
+
+    public void ClickOnViewCartBtn(){   
+
+        pre.clickelement(ViewCart_btn);
+    }
 }
