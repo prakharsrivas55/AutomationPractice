@@ -7,8 +7,8 @@ import io.cucumber.testng.CucumberOptions;
 		// plugin = { "com.epam.reportportal.cucumber.ScenarioReporter","rerun:target/rerun.txt" },
 		features = "classpath:features",
 		glue = "steps",
-		publish = true,
- 		tags = "@Testcase12"
+		publish = true
+ 		// tags = "@Testcase12"
 		)
 
 public class Runner extends AbstractTestNGCucumberTests{
