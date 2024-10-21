@@ -86,5 +86,18 @@ public class ProductPageSteps extends BaseSteps {
 
         productpage.ClickOnViewCartBtn();
     }
+
+    @Given("Increase quantity to {int}")
+    public void Increase_quantity_to(int i) {
+        
+        productpage.AddQuanity();
+    }
+
+    @Given("Click on Add to cart button")
+    public void Click_on_Add_to_cart_button() {
+        
+        productpage.ClickOnProductAddToCart();
+
+    }
     
 }

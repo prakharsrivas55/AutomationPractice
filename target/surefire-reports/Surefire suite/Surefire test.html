@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 21 13:37:45 IST 2024</td>
+<td>Started on:</td><td>Mon Oct 21 16:14:55 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>180 seconds (180056 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21206 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,98 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify All Products and product detail page", "Start"</td>
-<td><div><pre>org.junit.ComparisonFailure: expected:&lt;Brand: []Polo&gt; but was:&lt;Brand: [ ]Polo&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at Helpers.Predefined.assertions(Predefined.java:66)
-	at pages.ProductsPage.ProductBrandCheck(ProductsPage.java:141)
-	at steps.ProductPageSteps.Verify_that_detail_is_visible_product_name_category_price_availability_condition_brand(ProductPageSteps.java:42)
-	at ?.Verify that detail is visible: product name, category, price, availability, condition, brand(classpath:features/VerifyAllProductsAndProductDetailPage.feature:14)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1103007161", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1103007161'><pre>org.junit.ComparisonFailure: expected:&lt;Brand: []Polo&gt; but was:&lt;Brand: [ ]Polo&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at Helpers.Predefined.assertions(Predefined.java:66)
-	at pages.ProductsPage.ProductBrandCheck(ProductsPage.java:141)
-	at steps.ProductPageSteps.Verify_that_detail_is_visible_product_name_category_price_availability_condition_brand(ProductPageSteps.java:42)
-	at ?.Verify that detail is visible: product name, category, price, availability, condition, brand(classpath:features/VerifyAllProductsAndProductDetailPage.feature:14)
-</pre></div></td>
-<td>11</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User fills the Contact Us form", "Start"</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;submit&quot; data-qa=&quot;submit-button&quot; name=&quot;submit&quot; class=&quot;btn btn-primary pull-left submit_form&quot; value=&quot;Submit&quot;&gt; is not clickable at point (237, 653). Other element would receive the click: &lt;div id=&quot;aswift_4_host&quot; style=&quot;border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=129.0.6668.90)
-Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a31e3b8079a8df01d6f645f55b5509a5, clickElement {id=f.D9A28DAC7DD36BB81295745697286BCA.d.294876AE4E08BC60A3FC27154965694C.e.54}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\PRAKHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61018}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61018/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a31e3b8079a8df01d6f645f55b5509a5)] -&gt; xpath: //input[@data-qa=&apos;submit-button&apos;]]
-Session ID: a31e3b8079a8df01d6f645f55b5509a5
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at Helpers.Predefined.clickelement(Predefined.java:45)
-	at pages.ContactUsPage.ClickOnContactForm_SubmitButton(ContactUsPage.java:75)
-	at steps.ContactUsSteps.Click_Contact_Form_button(ContactUsSteps.java:42)
-	at ?.Click Contact Form &apos;Submit&apos; button(classpath:features/ContactUsForm.feature:12)
-... Removed 9 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace50826412", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace50826412'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;submit&quot; data-qa=&quot;submit-button&quot; name=&quot;submit&quot; class=&quot;btn btn-primary pull-left submit_form&quot; value=&quot;Submit&quot;&gt; is not clickable at point (237, 653). Other element would receive the click: &lt;div id=&quot;aswift_4_host&quot; style=&quot;border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=129.0.6668.90)
-Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a31e3b8079a8df01d6f645f55b5509a5, clickElement {id=f.D9A28DAC7DD36BB81295745697286BCA.d.294876AE4E08BC60A3FC27154965694C.e.54}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\PRAKHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61018}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61018/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a31e3b8079a8df01d6f645f55b5509a5)] -&gt; xpath: //input[@data-qa=&apos;submit-button&apos;]]
-Session ID: a31e3b8079a8df01d6f645f55b5509a5
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy20.click(Unknown Source)
-	at Helpers.Predefined.clickelement(Predefined.java:45)
-	at pages.ContactUsPage.ClickOnContactForm_SubmitButton(ContactUsPage.java:75)
-	at steps.ContactUsSteps.Click_Contact_Form_button(ContactUsSteps.java:42)
-	at ?.Click Contact Form &apos;Submit&apos; button(classpath:features/ContactUsForm.feature:12)
-</pre></div></td>
-<td>9</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -168,54 +76,9 @@ Session ID: a31e3b8079a8df01d6f645f55b5509a5
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search any product from search bar", "Start"</td>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Product quantity in Cart", "Start"</td>
 <td></td>
-<td>10</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Logout User", "Start"</td>
-<td></td>
-<td>27</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Test Cases Page", "Start"</td>
-<td></td>
-<td>7</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add Products in Cart", "Start"</td>
-<td></td>
-<td>12</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login User with correct email and password", "Start"</td>
-<td></td>
-<td>29</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register User with existing email", "Start"</td>
-<td></td>
-<td>22</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login User with incorrect email and password", "Start"</td>
-<td></td>
-<td>8</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Subscription in home page", "Start"</td>
-<td></td>
-<td>5</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Opening the browser", "Start"</td>
-<td></td>
-<td>23</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Subscription in Cart page", "Start"</td>
-<td></td>
-<td>8</td>
+<td>16</td>
 <td>Runner.Runner@6dbb137d</td></tr>
 </table><p>
 </body>

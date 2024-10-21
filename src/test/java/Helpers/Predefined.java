@@ -71,7 +71,16 @@ public class Predefined extends BasePage {
         Actions action= new Actions(driver);
         action.moveToElement(ele).perform(); 
     }
-    
+
+    public void actionarrowup(WebElement ele){
+
+        Actions action= new Actions(driver);
+        ele.click();
+
+        action.sendKeys(ele,org.openqa.selenium.Keys.ARROW_UP).perform();
+    }
+
+
     public void uploadfile() throws AWTException{
 
         Robot rb= new Robot();

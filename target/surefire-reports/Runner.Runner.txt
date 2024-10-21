@@ -1,19 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 180.615 s <<< FAILURE! - in Runner.Runner
-runScenario(Runner.Runner)  Time elapsed: 9.757 s  <<< FAILURE!
-org.openqa.selenium.ElementClickInterceptedException: 
-element click intercepted: Element <input type="submit" data-qa="submit-button" name="submit" class="btn btn-primary pull-left submit_form" value="Submit"> is not clickable at point (237, 653). Other element would receive the click: <div id="aswift_4_host" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
-  (Session info: chrome=129.0.6668.90)
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a31e3b8079a8df01d6f645f55b5509a5, clickElement {id=f.D9A28DAC7DD36BB81295745697286BCA.d.294876AE4E08BC60A3FC27154965694C.e.54}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\PRAKHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61018}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61018/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (a31e3b8079a8df01d6f645f55b5509a5)] -> xpath: //input[@data-qa='submit-button']]
-Session ID: a31e3b8079a8df01d6f645f55b5509a5
-
-runScenario(Runner.Runner)  Time elapsed: 11.559 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<Brand: []Polo> but was:<Brand: [ ]Polo>
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.912 s - in Runner.Runner

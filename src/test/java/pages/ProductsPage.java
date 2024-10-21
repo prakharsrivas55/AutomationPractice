@@ -4,14 +4,10 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import pages.HomePage;
-
-import com.google.common.graph.PredecessorsFunction;
 
 import Helpers.Predefined;
 
@@ -223,4 +219,25 @@ private WebElement ViewCart_btn;
 
         pre.clickelement(ViewCart_btn);
     }
+
+@FindBy(xpath = "//input[@id='quantity']")
+private WebElement ProductQuantity_loc;
+
+    public void AddQuanity(){   
+
+        for(int i=0;i<3;i++){
+
+            pre.actionarrowup(ProductQuantity_loc);
+        }
+    }
+
+@FindBy(xpath = "//button[@class='btn btn-default cart']")
+private WebElement ProductAddToCart_btn;
+
+    public void ClickOnProductAddToCart(){   
+
+        pre.clickelement(ProductAddToCart_btn);
+    }
+    
+
 }
