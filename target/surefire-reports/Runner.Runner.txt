@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: Runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.912 s - in Runner.Runner
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 421.268 s <<< FAILURE! - in Runner.Runner
+runScenario(Runner.Runner)  Time elapsed: 9.705 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<ALL PRODUCTS[]> but was:<ALL PRODUCTS[FORMAL WEAR]>
+

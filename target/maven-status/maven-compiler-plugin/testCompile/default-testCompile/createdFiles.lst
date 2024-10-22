@@ -4,12 +4,14 @@ pages\LoginPage.class
 pages\CartPage.class
 steps\RegisterUserSteps.class
 Helpers\dropdowns.class
+pages\PaymentPage.class
 steps\ContactUsSteps.class
 Runner\Runner.class
 pages\RegisterUser.class
 steps\ProductPageSteps.class
 pages\ProductsPage.class
 pages\HomePage.class
+steps\PaymentSteps.class
 steps\BaseSteps.class
 pages\ContactUsPage.class
 steps\LoginPageSteps.class

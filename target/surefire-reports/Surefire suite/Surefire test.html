@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 21 16:14:55 IST 2024</td>
+<td>Started on:</td><td>Wed Oct 23 00:10:53 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21206 ms)</td>
+<tr><td>Total time:</td><td>420 seconds (420327 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,35 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify All Products and product detail page", "Start"</td>
+<td><div><pre>org.junit.ComparisonFailure: expected:&lt;ALL PRODUCTS[]&gt; but was:&lt;ALL PRODUCTS[FORMAL WEAR]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at Helpers.Predefined.assertions(Predefined.java:79)
+	at pages.ProductsPage.verify_all_products_text(ProductsPage.java:28)
+	at steps.ProductPageSteps.Verify_user_is_navigated_to_ALL_PRODUCTS_page_successfully(ProductPageSteps.java:13)
+	at ?.Verify user is navigated to ALL PRODUCTS page successfully(classpath:features/VerifyAllProductsAndProductDetailPage.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1791032605", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1791032605'><pre>org.junit.ComparisonFailure: expected:&lt;ALL PRODUCTS[]&gt; but was:&lt;ALL PRODUCTS[FORMAL WEAR]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at Helpers.Predefined.assertions(Predefined.java:79)
+	at pages.ProductsPage.verify_all_products_text(ProductsPage.java:28)
+	at steps.ProductPageSteps.Verify_user_is_navigated_to_ALL_PRODUCTS_page_successfully(ProductPageSteps.java:13)
+	at ?.Verify user is navigated to ALL PRODUCTS page successfully(classpath:features/VerifyAllProductsAndProductDetailPage.feature:9)
+</pre></div></td>
+<td>9</td>
+<td>Runner.Runner@6dbb137d</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,9 +105,79 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register User with existing email", "Start"</td>
+<td></td>
+<td>31</td>
+<td>Runner.Runner@6dbb137d</td></tr>
+<tr>
 <td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Product quantity in Cart", "Start"</td>
 <td></td>
 <td>16</td>
+<td>Runner.Runner@6dbb137d</td></tr>
+<tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login User with correct email and password", "Start"</td>
+<td></td>
+<td>38</td>
+<td>Runner.Runner@6dbb137d</td></tr>
+<tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Subscription in home page", "Start"</td>
+<td></td>
+<td>7</td>
+<td>Runner.Runner@6dbb137d</td></tr>
+<tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Logout User", "Start"</td>
+<td></td>
+<td>30</td>
+<td>Runner.Runner@6dbb137d</td></tr>
+<tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Subscription in Cart page", "Start"</td>
+<td></td>
+<td>11</td>
+<td>Runner.Runner@6dbb137d</td></tr>
+<tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place Order: Register before Checkout", "Start"</td>
+<td></td>
+<td>62</td>
+<td>Runner.Runner@6dbb137d</td></tr>
+<tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Test Cases Page", "Start"</td>
+<td></td>
+<td>9</td>
+<td>Runner.Runner@6dbb137d</td></tr>
+<tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place Order: Register while Checkout", "Start"</td>
+<td></td>
+<td>52</td>
+<td>Runner.Runner@6dbb137d</td></tr>
+<tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User fills the Contact Us form", "Start"</td>
+<td></td>
+<td>15</td>
+<td>Runner.Runner@6dbb137d</td></tr>
+<tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place Order: Login before Checkout", "Start"</td>
+<td></td>
+<td>55</td>
+<td>Runner.Runner@6dbb137d</td></tr>
+<tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add Products in Cart", "Start"</td>
+<td></td>
+<td>17</td>
+<td>Runner.Runner@6dbb137d</td></tr>
+<tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login User with incorrect email and password", "Start"</td>
+<td></td>
+<td>14</td>
+<td>Runner.Runner@6dbb137d</td></tr>
+<tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search any product from search bar", "Start"</td>
+<td></td>
+<td>11</td>
+<td>Runner.Runner@6dbb137d</td></tr>
+<tr>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Opening the browser", "Start"</td>
+<td></td>
+<td>35</td>
 <td>Runner.Runner@6dbb137d</td></tr>
 </table><p>
 </body>

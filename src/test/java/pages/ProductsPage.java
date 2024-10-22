@@ -4,7 +4,6 @@ import static org.junit.Assert.assertEquals;
 
 import java.util.List;
 
-import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -54,21 +53,7 @@ private WebElement firstproductbtn_loc;
 
     public void ClickOnFirstProduct(){
         
-        int attempts=0;
-        boolean clicked= false;
-
-        while(attempts<3&!clicked){
-            try {
-                pre.clickelement(firstproductbtn_loc);
-                clicked= true;
-            }
-            catch (ElementClickInterceptedException e) {
-
-                System.out.println("Click intercepted, retrying...");
-                pre.scrolldown();
-                attempts++;
-            }
-        }
+        pre.attemptClick(firstproductbtn_loc);
     }
 
     public void ProductDetailTitleCheck(){
@@ -107,7 +92,7 @@ private WebElement productcategory_loc;
         productcategory_loc.isDisplayed();
     }
 
-@FindBy(xpath = "//div[@class='product-information']/p[2][contains(., 'In Stock')]")//////////////////
+@FindBy(xpath = "//div[@class='product-information']/p[2][contains(., 'In Stock')]")
 private WebElement productavailability_loc;
 
     public void ProductAvailabilityCheck(){
@@ -117,7 +102,7 @@ private WebElement productavailability_loc;
        pre.assertions(ExpectedProductAvailability, ActualProductAvailability);
     }   
 
-@FindBy(xpath = "//div[@class='product-information']/p[3][contains(., 'New')]")//////////////////
+@FindBy(xpath = "//div[@class='product-information']/p[3][contains(., 'New')]")
 private WebElement productcondition_loc;
 
     public void ProductConditionCheck(){
@@ -127,7 +112,7 @@ private WebElement productcondition_loc;
        pre.assertions(ExpectedProductCondition, ActualProductCondition);
     } 
 
-@FindBy(xpath = "//div[@class='product-information']/p[4][contains(., 'Polo')]")
+@FindBy(xpath = "//div[@class='product-information']/p[4][contains(., 'Polo')]/a")
 private WebElement productbrand_loc;
     
     public void ProductBrandCheck(){

@@ -1,16 +1,20 @@
 package Helpers;
 
+import org.openqa.selenium.ElementClickInterceptedException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.util.List;
+import java.util.Map;
+
+
 
 import static org.junit.Assert.assertEquals;
 
@@ -47,7 +51,15 @@ public class Predefined extends BasePage {
 
     public void sendkeyselement(WebElement ele, String value){
 
+        ele.clear();
         ele.sendKeys(value);
+    }
+
+    public void multipleSendKeys(List<WebElement> ele, List<String> value){
+
+        for(int i=0;i<ele.size();i++){
+            sendkeyselement(ele.get(i), value.get(i));
+        } 
     }
 
     public void scrolldown(){
@@ -57,6 +69,7 @@ public class Predefined extends BasePage {
     }
 
     public void scrollToFooter(WebElement footerElement) {
+
         // Use JavaScript to scroll to the footer element
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", footerElement);
     }
@@ -80,6 +93,35 @@ public class Predefined extends BasePage {
         action.sendKeys(ele,org.openqa.selenium.Keys.ARROW_UP).perform();
     }
 
+    public void attemptClick(WebElement ele) {
+    int attempts = 0;
+    boolean clicked = false;
+
+    while (attempts < 3 && !clicked) {
+        try {
+            clickelement(ele);
+            clicked = true;
+        } catch (ElementClickInterceptedException e) {
+            System.out.println("Click intercepted, retrying...");
+            scrolldown();
+            attempts++;
+        }
+    }
+}
+
+    private String getElementText(WebElement element) {
+
+        return element.getText().trim();
+    }
+
+    public void verifyElementText(Map<WebElement, String> elementsToVerify){
+
+        for(Map.Entry<WebElement,String> entry: elementsToVerify.entrySet()){
+
+            WebElement ele= entry.getKey();
+            assertions(entry.getValue(),getElementText(ele));
+        }
+    }
 
     public void uploadfile() throws AWTException{
 

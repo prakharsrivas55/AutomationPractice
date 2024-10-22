@@ -1,10 +1,12 @@
 C:\Users\prakharsrivastava\Desktop\automation\src\test\java\pages\CartPage.java
 C:\Users\prakharsrivastava\Desktop\automation\src\test\java\pages\HomePage.java
+C:\Users\prakharsrivastava\Desktop\automation\src\test\java\pages\PaymentPage.java
 C:\Users\prakharsrivastava\Desktop\automation\src\test\java\pages\RegisterUser.java
 C:\Users\prakharsrivastava\Desktop\automation\src\test\java\pages\LoginPage.java
 C:\Users\prakharsrivastava\Desktop\automation\src\test\java\Runner\Runner.java
 C:\Users\prakharsrivastava\Desktop\automation\src\test\java\Helpers\dropdowns.java
 C:\Users\prakharsrivastava\Desktop\automation\src\test\java\Helpers\Predefined.java
+C:\Users\prakharsrivastava\Desktop\automation\src\test\java\steps\PaymentSteps.java
 C:\Users\prakharsrivastava\Desktop\automation\src\test\java\steps\ProductPageSteps.java
 C:\Users\prakharsrivastava\Desktop\automation\src\test\java\steps\HomepageSteps.java
 C:\Users\prakharsrivastava\Desktop\automation\src\test\java\steps\Hook.java

@@ -121,12 +121,25 @@ private WebElement successfullySubscribeMessage_loc;
         pre.assertions("You have been successfully subscribed!", Actualmessage);
     }
 
-@FindBy(xpath = "//i[@class='fa fa-shopping-cart']")
+@FindBy(xpath = "(//i[@class='fa fa-shopping-cart'])[1]")
 private WebElement cartbtn_loc;
 
     public void ClickOnCartButton(){
         
         pre.clickelement(cartbtn_loc);
     }
+
+@FindBy(xpath = "(//div[@class='productinfo text-center']//a[@data-product-id='1'])[1]")
+private WebElement HomeAddToCart_btn;
+
+    public void ClickOnHomeAddToCartButton() throws InterruptedException{
+        
+        pre.attemptClick(HomeAddToCart_btn);
+        // pre.explictwaitcondition(HomeAddToCart_btn, driver);
+        // pre.scrolldown();
+        // pre.clickelement(HomeAddToCart_btn);
+        Thread.sleep(2000);
+    }
+    
 
 }

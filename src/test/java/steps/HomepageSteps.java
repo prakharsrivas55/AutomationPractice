@@ -63,4 +63,11 @@ public class HomepageSteps extends BaseSteps {
         
         home.ClickOnCartButton();
     }
+
+    @Given("Add products to cart")
+    public void Add_products_to_cart() throws InterruptedException {
+        
+        Thread.sleep(3000);
+        home.ClickOnHomeAddToCartButton();
+    }
 }
