@@ -1,0 +1,62 @@
+# Created at 2024-11-13T16:50:45.732
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+
+# Created at 2024-11-13T16:50:46.666
+Unexpected IOException: 5,1,Runner.Runner,runScenario(Runner.Runner),cucumber,null,null
+
+
+# Created at 2024-11-13T16:50:46.857
+Unexpected IOException with stream: ------------Scenario :Remove Products From Cart----------
+
+
+# Created at 2024-11-13T16:50:48.572
+Unexpected IOException with stream: Nov 13, 2024 4:50:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 129, returning the closest version; found: 126; Please update to a Selenium version that supports CDP version 129
+
+
+# Created at 2024-11-13T16:50:50.652
+Unexpected IOException with stream: 20241113165050
+
+
+# Created at 2024-11-13T16:50:50.665
+Unexpected IOException with stream: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.90)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [98aef211d1e61f0e53b10e4cf701fee8, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.90, chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d..., userDataDir: C:\Users\PRAKHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65481}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65481/devtoo..., se:cdpVersion: 129.0.6668.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 98aef211d1e61f0e53b10e4cf701fee8
+
+# Created at 2024-11-13T16:50:50.667
+Unexpected IOException with stream: 
+
+
+# Created at 2024-11-13T16:50:50.879
+Unexpected IOException with stream: --------------Scenario end--------------
+
+
+# Created at 2024-11-13T16:50:50.890
+Unexpected IOException: 8,1,Runner.Runner,runScenario(Runner.Runner),null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=129.0.6668.90)\000ABuild info: version: '4.22.0'\002C revision: 'c5f3146703*'\000ASystem info: os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.9'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [98aef211d1e61f0e53b10e4cf701fee8\002C executeScript {args=[]\002C script=return document.readyState}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 129.0.6668.90\002C chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d...\002C userDataDir: C:\005CUsers\005CPRAKHA~1\005CAppData\005CL...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:65481}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:65481/devtoo...\002C se:cdpVersion: 129.0.6668.90\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 98aef211d1e61f0e53b10e4cf701fee8,null,no such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=129.0.6668.90)\000ABuild info: version: '4.22.0'\002C revision: 'c5f3146703*'\000ASystem info: os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.9'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [98aef211d1e61f0e53b10e4cf701fee8\002C executeScript {args=[]\002C script=return document.readyState}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 129.0.6668.90\002C chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d...\002C userDataDir: C:\005CUsers\005CPRAKHA~1\005CAppData\005CL...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:65481}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:65481/devtoo...\002C se:cdpVersion: 129.0.6668.90\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 98aef211d1e61f0e53b10e4cf701fee8,Runner.runScenario \00BB NoSuchWindow no such window: target window already closed...,org.openqa.selenium.NoSuchWindowException: \000Ano such window: target window already closed\000Afrom unknown error: web view not found\000A  (Session info: chrome=129.0.6668.90)\000ABuild info: version: '4.22.0'\002C revision: 'c5f3146703*'\000ASystem info: os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '17.0.9'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [98aef211d1e61f0e53b10e4cf701fee8\002C executeScript {args=[]\002C script=return document.readyState}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 129.0.6668.90\002C chrome: {chromedriverVersion: 129.0.6668.100 (cf58cba358d...\002C userDataDir: C:\005CUsers\005CPRAKHA~1\005CAppData\005CL...}\002C fedcm:accounts: true\002C goog:chromeOptions: {debuggerAddress: localhost:65481}\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platformName: windows\002C proxy: Proxy()\002C se:cdp: ws://localhost:65481/devtoo...\002C se:cdpVersion: 129.0.6668.90\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:extension:minPinLength: true\002C webauthn:extension:prf: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: 98aef211d1e61f0e53b10e4cf701fee8\000A
+
+
+# Created at 2024-11-13T16:50:52.587
+Unexpected IOException with stream: [32m[1m????????????????????????????????????????????????????????????????????????????[0m
+[32m[1m?[0m View your Cucumber Report at:                                            [32m[1m?[0m
+[32m[1m?[0m [1m[36m[4mhttps://reports.cucumber.io/reports/1acb52e7-ab5b-4fd7-9b2a-f2315f03e42b[0m [32m[1m?[0m
+[32m[1m?[0m                                                                          [32m[1m?[0m
+[32m[1m?[0m [1mThis report will self-destruct in 24h.[0m                                   [32m[1m?[0m
+[32m[1m?[0m Keep reports forever: [4m[1m[36mhttps://reports.cucumber.io/profile[0m                [32m[1m?[0m
+[32m[1m????????????????????????????????????????????????????????????????????????????[0m
+
+# Created at 2024-11-13T16:50:52.709
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGDirectoryTestSuite,Runner.Runner,null,null,null
+
+

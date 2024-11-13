@@ -147,4 +147,27 @@ private WebElement PlaceOrder_btn;
 
         pre.clickelement(PlaceOrder_btn);
     }
+
+@FindBy(xpath = "(//a[@class='cart_quantity_delete'])[1]")
+private WebElement RemoveProduct_btn;
+
+    public void ClickOnRemoveButton() throws InterruptedException{
+        
+        pre.clickelement(RemoveProduct_btn);
+    }
+
+@FindBy(xpath = "//span[@id='empty_cart']/p/b")
+private WebElement EmptyCart_loc;
+
+    public void ProductRemovedCheck(){
+        
+        if(EmptyCart_loc.isDisplayed()){
+
+            System.out.println("Product removed from cart");
+        }
+        else{
+            System.out.println("Product is still visible on cart");
+            
+        }
+    }
 }

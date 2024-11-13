@@ -50,4 +50,16 @@ public class CartSteps extends BaseSteps {
         cartpage.EnterCartDescription();
         cartpage.ClickOnPlaceOrder();
     }
+
+    @Given("Click {string} button corresponding to particular product")
+    public void Click_button_corresponding_to_particular_product(String s) throws InterruptedException {
+        
+        cartpage.ClickOnRemoveButton();
+    }
+
+    @Given("Verify that product is removed from the cart")
+    public void Verify_that_product_is_removed_from_the_cart() throws InterruptedException {
+        
+        cartpage.ProductRemovedCheck();
+    }
 }
