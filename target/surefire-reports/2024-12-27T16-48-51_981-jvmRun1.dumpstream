@@ -1,0 +1,39 @@
+# Created at 2024-12-27T16:49:50.628
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+
+
+# Created at 2024-12-27T16:50:04.821
+Unexpected IOException with stream: 20241227165004
+
+
+# Created at 2024-12-27T16:50:05.169
+Unexpected IOException with stream: --------------Scenario end--------------
+
+
+# Created at 2024-12-27T16:50:05.171
+Unexpected IOException: 6,1,Runner.Runner,runScenario(Runner.Runner),null,null,null
+
+
+# Created at 2024-12-27T16:50:05.172
+Unexpected IOException: 5,1,Runner.Runner,runScenario(Runner.Runner),cucumber,null,null
+
+
+# Created at 2024-12-27T16:50:05.186
+Unexpected IOException with stream: ------------Scenario :Place Order: Login before Checkout----------
+
+
+# Created at 2024-12-27T16:50:05.920
+Unexpected IOException with stream: Dec 27, 2024 4:50:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 131
+
+
+# Created at 2024-12-27T16:50:05.921
+Unexpected IOException with stream: Dec 27, 2024 4:50:05 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 131.0.6778.205. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.22.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+
