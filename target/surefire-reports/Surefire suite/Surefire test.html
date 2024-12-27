@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Surefire test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>13/4/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 13 16:56:18 IST 2024</td>
+<td>Started on:</td><td>Fri Dec 27 16:17:24 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>291 seconds (291473 ms)</td>
+<tr><td>Total time:</td><td>14 seconds (14057 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,91 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register User with existing email", "Start"</td>
-<td><div><pre>org.junit.ComparisonFailure: expected:&lt;New User Signup![]&gt; but was:&lt;New User Signup![Identity management solutions]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at pages.RegisterUser.verify_singuptext(RegisterUser.java:39)
-	at steps.RegisterUserSteps.Verify_New_User_Signup_is_visible(RegisterUserSteps.java:40)
-	at ?.Verify New User Signup! is visible(classpath:features/RegisterUser.feature:30)
-</pre></div><a href='#' onClick='toggleBox("stack-trace483012253", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace483012253'><pre>org.junit.ComparisonFailure: expected:&lt;New User Signup![]&gt; but was:&lt;New User Signup![Identity management solutions]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at pages.RegisterUser.verify_singuptext(RegisterUser.java:39)
-	at steps.RegisterUserSteps.Verify_New_User_Signup_is_visible(RegisterUserSteps.java:40)
-	at ?.Verify New User Signup! is visible(classpath:features/RegisterUser.feature:30)
-</pre></div></td>
-<td>6</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Opening the browser", "Start"</td>
-<td><div><pre>org.junit.ComparisonFailure: expected:&lt;New User Signup![]&gt; but was:&lt;New User Signup![Access control systems]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at pages.RegisterUser.verify_singuptext(RegisterUser.java:39)
-	at steps.RegisterUserSteps.Verify_New_User_Signup_is_visible(RegisterUserSteps.java:40)
-	at ?.Verify New User Signup! is visible(classpath:features/RegisterUser.feature:9)
-</pre></div><a href='#' onClick='toggleBox("stack-trace518137704", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace518137704'><pre>org.junit.ComparisonFailure: expected:&lt;New User Signup![]&gt; but was:&lt;New User Signup![Access control systems]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at pages.RegisterUser.verify_singuptext(RegisterUser.java:39)
-	at steps.RegisterUserSteps.Verify_New_User_Signup_is_visible(RegisterUserSteps.java:40)
-	at ?.Verify New User Signup! is visible(classpath:features/RegisterUser.feature:9)
-</pre></div></td>
-<td>6</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search any product from search bar", "Start"</td>
-<td><div><pre>org.junit.ComparisonFailure: expected:&lt;ALL PRODUCTS[]&gt; but was:&lt;ALL PRODUCTS[FORMAL WEAR]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at Helpers.Predefined.assertions(Predefined.java:79)
-	at pages.ProductsPage.verify_all_products_text(ProductsPage.java:28)
-	at steps.ProductPageSteps.Verify_user_is_navigated_to_ALL_PRODUCTS_page_successfully(ProductPageSteps.java:13)
-	at ?.Verify user is navigated to ALL PRODUCTS page successfully(classpath:features/SearchProduct.feature:9)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1814815047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1814815047'><pre>org.junit.ComparisonFailure: expected:&lt;ALL PRODUCTS[]&gt; but was:&lt;ALL PRODUCTS[FORMAL WEAR]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at Helpers.Predefined.assertions(Predefined.java:79)
-	at pages.ProductsPage.verify_all_products_text(ProductsPage.java:28)
-	at steps.ProductPageSteps.Verify_user_is_navigated_to_ALL_PRODUCTS_page_successfully(ProductPageSteps.java:13)
-	at ?.Verify user is navigated to ALL PRODUCTS page successfully(classpath:features/SearchProduct.feature:9)
-</pre></div></td>
-<td>8</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify All Products and product detail page", "Start"</td>
-<td><div><pre>org.junit.ComparisonFailure: expected:&lt;ALL PRODUCTS[]&gt; but was:&lt;ALL PRODUCTS[FLARE DRESSES]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at Helpers.Predefined.assertions(Predefined.java:79)
-	at pages.ProductsPage.verify_all_products_text(ProductsPage.java:28)
-	at steps.ProductPageSteps.Verify_user_is_navigated_to_ALL_PRODUCTS_page_successfully(ProductPageSteps.java:13)
-	at ?.Verify user is navigated to ALL PRODUCTS page successfully(classpath:features/VerifyAllProductsAndProductDetailPage.feature:9)
-</pre></div><a href='#' onClick='toggleBox("stack-trace563105933", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace563105933'><pre>org.junit.ComparisonFailure: expected:&lt;ALL PRODUCTS[]&gt; but was:&lt;ALL PRODUCTS[FLARE DRESSES]&gt;
-	at org.junit.Assert.assertEquals(Assert.java:115)
-	at org.junit.Assert.assertEquals(Assert.java:144)
-	at Helpers.Predefined.assertions(Predefined.java:79)
-	at pages.ProductsPage.verify_all_products_text(ProductsPage.java:28)
-	at steps.ProductPageSteps.Verify_user_is_navigated_to_ALL_PRODUCTS_page_successfully(ProductPageSteps.java:13)
-	at ?.Verify user is navigated to ALL PRODUCTS page successfully(classpath:features/VerifyAllProductsAndProductDetailPage.feature:9)
-</pre></div></td>
-<td>9</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -161,69 +76,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Remove Products From Cart", "Start"</td>
+<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify All Products and product detail page", "Start"</td>
 <td></td>
 <td>13</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add Products in Cart", "Start"</td>
-<td></td>
-<td>12</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Subscription in Cart page", "Start"</td>
-<td></td>
-<td>6</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place Order: Register while Checkout", "Start"</td>
-<td></td>
-<td>39</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Logout User", "Start"</td>
-<td></td>
-<td>23</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Subscription in home page", "Start"</td>
-<td></td>
-<td>7</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Product quantity in Cart", "Start"</td>
-<td></td>
-<td>12</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login User with correct email and password", "Start"</td>
-<td></td>
-<td>26</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User fills the Contact Us form", "Start"</td>
-<td></td>
-<td>11</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place Order: Login before Checkout", "Start"</td>
-<td></td>
-<td>44</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Place Order: Register before Checkout", "Start"</td>
-<td></td>
-<td>39</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Test Cases Page", "Start"</td>
-<td></td>
-<td>7</td>
-<td>Runner.Runner@6dbb137d</td></tr>
-<tr>
-<td title='Runner.Runner.runScenario()'><b>runScenario</b><br>Test class: Runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login User with incorrect email and password", "Start"</td>
-<td></td>
-<td>10</td>
 <td>Runner.Runner@6dbb137d</td></tr>
 </table><p>
 </body>

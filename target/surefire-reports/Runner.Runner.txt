@@ -1,16 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 292.21 s <<< FAILURE! - in Runner.Runner
-runScenario(Runner.Runner)  Time elapsed: 6.902 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<New User Signup![]> but was:<New User Signup![Access control systems]>
-
-runScenario(Runner.Runner)  Time elapsed: 6.727 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<New User Signup![]> but was:<New User Signup![Identity management solutions]>
-
-runScenario(Runner.Runner)  Time elapsed: 8.979 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<ALL PRODUCTS[]> but was:<ALL PRODUCTS[FORMAL WEAR]>
-
-runScenario(Runner.Runner)  Time elapsed: 9.605 s  <<< FAILURE!
-org.junit.ComparisonFailure: expected:<ALL PRODUCTS[]> but was:<ALL PRODUCTS[FLARE DRESSES]>
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.837 s - in Runner.Runner

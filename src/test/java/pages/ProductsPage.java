@@ -112,7 +112,7 @@ private WebElement productcondition_loc;
        pre.assertions(ExpectedProductCondition, ActualProductCondition);
     } 
 
-@FindBy(xpath = "//div[@class='product-information']/p[4][contains(., 'Polo')]/a")
+@FindBy(xpath = "//div[@class='product-information']/p[4][contains(., 'Polo')]")
 private WebElement productbrand_loc;
     
     public void ProductBrandCheck(){

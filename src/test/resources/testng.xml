@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="API Test Suite" parallel="tests" thread-count="2">
+    <!-- Listener to generate Extent reports -->
+
+    <!-- Define the test and specify classes to run -->
+    <test name="Automation UI Automation">
+        <classes>
+            <!-- Specify the classes you want to run -->
+            <class name="Runner.Runner"/>
+            <!-- Add more classes as needed -->
+        </classes>
+    </test>
+</suite>
