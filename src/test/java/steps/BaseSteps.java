@@ -48,7 +48,7 @@ public class BaseSteps {
         // Add argument for headless mode
         options.addArguments("--headless"); // Enable headless mode
         options.addArguments("--no-sandbox"); // Necessary for running in certain environments (e.g., Docker)
-        options.addArguments("--disable-dev-shm-usage"); // Fixes issues on certain machines (like CI/CD systems)
+        // options.addArguments("--disable-dev-shm-usage"); // Fixes issues on certain machines (like CI/CD systems)
 
         // Initialize the WebDriver with ChromeOptions
         driver = new ChromeDriver(options);
