@@ -41,6 +41,8 @@ public class Hook extends BaseSteps {
 
         }
         catch(Exception e){
+            System.out.println("YO");
+            e.printStackTrace();
             System.err.println(e);
         }
         driver.quit();
